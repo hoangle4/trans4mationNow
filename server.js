@@ -32,9 +32,9 @@ if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config();
 }
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+}
 
 //Backend API
 // app.use('/api', require('./routes/api'));
