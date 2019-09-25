@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .Landing_Img_Box_2 {
   position: absolute;
   width: 100%;
