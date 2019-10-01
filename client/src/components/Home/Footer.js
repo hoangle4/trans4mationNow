@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<div className='row mx-0 Footer'>
 			<div className='col-12 p-0'>
-				<div className='row mx-0'>
+				<div className='row mx-0 border-bottom mb-5'>
 					<div className='col-md-6 col-xs-12 p-0'>
 						<h5>Contact Us</h5>
 						<ul className='Footer_UL'>
@@ -31,7 +31,7 @@ const Footer = () => {
 					</div>
 					<div className='col-md-6 col-xs-12 p-0'>
 						<h5>Send Us Message</h5>
-						<form>
+						<form className='p-3'>
 							<div class='form-group'>
 								<div class='form-group'>
 									<label for='inputName'>Name</label>
@@ -48,6 +48,14 @@ const Footer = () => {
 								<small id='emailHelp' class='form-text'>
 									We'll never share your email with anyone else.
 								</small>
+								<label for='InputMessage'> Message</label>
+								<textarea
+									type='text'
+									class='form-control'
+									id='InputMessage'
+									aria-describedby='emailHelp'
+									placeholder='Enter message'
+								/>
 							</div>
 
 							<div class='form-group form-check'>
