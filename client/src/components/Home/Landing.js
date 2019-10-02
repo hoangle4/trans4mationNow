@@ -64,31 +64,34 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className='row p-0 m-0 mb-5'>
-        <div className='col-12 my-5'>
-          <h5 className='text-center'>Upcomming Events</h5>
+      <div className='container'>
+        <div className='row p-0 m-0 Landing_Event'>
+          <div className='col-12 my-5'>
+            <h5 className='text-center'>Upcomming Events</h5>
+          </div>
+          <LandingEvents
+            img='./images/stock2.jpg'
+            title='Event 2'
+            desc='Lorem ipsum dolor sit amet...'
+            date='20-10-2020'
+          />
+          <LandingEvents
+            img='./images/stock3.jpg'
+            title='Event 3'
+            desc='Lorem ipsum dolor sit amet.... '
+            date='20-10-2020'
+          />
+          <LandingEvents
+            img='./images/stock4.jpg'
+            title='Event 1'
+            desc='Lorem ipsum dolor sit amet...'
+            date='20-10-2020'
+          />
         </div>
-        <LandingEvents
-          img='./images/stock2.jpg'
-          title='Event 2'
-          desc='Lorem ipsum dolor sit amet...'
-          date='20-10-2020'
-        />
-        <LandingEvents
-          img='./images/stock3.jpg'
-          title='Event 3'
-          desc='Lorem ipsum dolor sit amet.... '
-          date='20-10-2020'
-        />
-        <LandingEvents
-          img='./images/stock4.jpg'
-          title='Event 1'
-          desc='Lorem ipsum dolor sit amet...'
-          date='20-10-2020'
-        />
-      </div>
-      <div className='row m-0 p-0 mt-5'>
-        <LandingStory />
+
+        <div className='row m-0 p-0 Story_Row'>
+          <LandingStory />
+        </div>
       </div>
     </Fragment>
   );

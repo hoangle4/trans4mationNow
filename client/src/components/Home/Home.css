@@ -83,14 +83,27 @@ blockquote {
 	background: linear-gradient(to left, #07a3b2, #d9ecc7);
 }
 
+.Story_Row {
+	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
+}
+
+.Story_Row > div {
+	background: linear-gradient(to left, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1))
+}
+
 .Landing_Event {
-	background: #07a3b2;
-	color: #eaf0e4;
+	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
 	font-size: 1rem;
+
 }
 
 .Landing_Event a {
 	color: #eaf0e4;
+}
+.Event_Col {
+	/* background: linear-gradient(to left, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1)); */
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 .green-btn {

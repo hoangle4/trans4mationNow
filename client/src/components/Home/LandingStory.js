@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const LandingStory = () => {
   return (
     <Fragment>
-      <div className='col-12 my-5 py-5'>
+      <div className='col-12 my-5 py-5 '>
         <h3 className='text-center'>Stories</h3>
         <div className='row'>
           <div className='col-md-3 col-xs-12'>
