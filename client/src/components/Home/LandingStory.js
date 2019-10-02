@@ -9,7 +9,7 @@ const LandingStory = () => {
             <img
               className='card-img-top'
               src='./images/stock2.jpg'
-              alt='Card image cap'
+              alt='Card  cap'
             />
           </div>
           <div className='col-md-6 col-xs-12'>
@@ -38,7 +38,7 @@ const LandingStory = () => {
             <img
               className='card-img-top'
               src='./images/stock3.jpg'
-              alt='Card image cap'
+              alt='Card  cap'
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ const LandingStory = () => {
             <img
               className='card-img-top'
               src='./images/stock4.jpg'
-              alt='Card image cap'
+              alt='Card cap'
             />
           </div>
           <div className='col-md-6 col-xs-12'>
