@@ -1,16 +1,9 @@
 import React from 'react';
 
 const Navbar = () => (
-	<nav
-		style={{
-			zIndex: '99',
-			background: 'rgba(255,255,255,0.3)',
-			boxShadow: '0px 1px 2px #dedede'
-		}}
-		className='navbar navbar-expand-lg navbar-light font-weight-bold fixed-top'
-	>
+	<nav className='Navbar navbar navbar-expand-lg navbar-light font-weight-bold fixed-top'>
 		<a className='navbar-brand' href='/'>
-			<img style={{ width: '100px', height: '100px' }} src='images/logo-clear.png' alt='trans4mation logo' />
+			<img src='images/logo-clear.png' alt='trans4mation logo' />
 		</a>
 		<h5 className='Navbar_h5'>G.E.M.s University</h5>
 		<button

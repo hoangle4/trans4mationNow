@@ -32,39 +32,44 @@ const Footer = () => {
 					<div className='col-md-6 col-xs-12 p-0'>
 						<h5>Send Us Message</h5>
 						<form className='p-3'>
-							<div class='form-group'>
-								<div class='form-group'>
-									<label for='inputName'>Name</label>
-									<input type='text' class='form-control' id='inputName' placeholder='Enter name' />
+							<div className='form-group'>
+								<div className='form-group'>
+									<label htmlFor='inputName'>Name</label>
+									<input
+										type='text'
+										className='form-control'
+										id='inputName'
+										placeholder='Enter name'
+									/>
 								</div>
-								<label for='InputEmail'>Email address</label>
+								<label htmlFor='InputEmail'>Email address</label>
 								<input
 									type='email'
-									class='form-control'
+									className='form-control'
 									id='InputEmail'
 									aria-describedby='emailHelp'
 									placeholder='Enter email'
 								/>
-								<small id='emailHelp' class='form-text'>
+								<small id='emailHelp' className='form-text'>
 									We'll never share your email with anyone else.
 								</small>
-								<label for='InputMessage'> Message</label>
+								<label htmlFor='InputMessage'> Message</label>
 								<textarea
 									type='text'
-									class='form-control'
+									className='form-control'
 									id='InputMessage'
 									aria-describedby='emailHelp'
 									placeholder='Enter message'
 								/>
 							</div>
 
-							<div class='form-group form-check'>
-								<input type='checkbox' class='form-check-input' id='check' />
-								<label class='form-check-label' for='check'>
+							<div className='form-group form-check'>
+								<input type='checkbox' className='form-check-input' id='check' />
+								<label className='form-check-label' htmlFor='check'>
 									Subscribe to our newsletters.
 								</label>
 							</div>
-							<button type='submit' class='btn btn-xs-block btn-primary'>
+							<button type='submit' className='btn btn-xs-block btn-primary'>
 								Send
 							</button>
 						</form>
