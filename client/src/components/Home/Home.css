@@ -86,9 +86,16 @@ blockquote {
 .Story_Row {
 	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
 }
+.Story_Row > div:first-child {
+	background: none!important;
+}
 
-.Story_Row > div {
+.Story_Row > div:nth-child(even)  {
 	background: linear-gradient(to left, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1))
+}
+
+.Story_Row > div:nth-child(odd)  {
+	background: linear-gradient(to right, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1))
 }
 
 .Landing_Event {

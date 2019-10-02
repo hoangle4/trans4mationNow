@@ -90,6 +90,9 @@ const Landing = () => {
         </div>
 
         <div className='row m-0 p-0 Story_Row'>
+          <div className='col-12 mt-5'>
+            <h5 className='text-center'>Stories</h5>
+          </div>
           <LandingStory />
         </div>
       </div>
