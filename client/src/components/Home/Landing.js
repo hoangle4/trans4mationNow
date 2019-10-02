@@ -20,48 +20,42 @@ const Landing = () => {
 
                 <div className='carousel-caption d-none d-md-block'>
                   <h1>Transformation Now</h1>
-                  <p>Building Legacy Together</p>
-                  <a
-                    href='#!'
-                    className='Landing_btn btn btn-primary'
-                    style={{ color: '#D7D6D6', textShadow: 'none' }}
-                  >
+                  <p className=''>Building Legacy Together</p>
+                  <hr style={{ background: '#ffffff' }} className='' />
+                  <br />
+                  <a href='#!' className='teal-btn'>
                     Our Mission
                   </a>
                 </div>
               </div>
               {/* ---------------Building */}
               <div className='carousel-item'>
-                <div className='Landing_Img_Box_2'>
+                <div className='Landing_Img_Box_3'>
                   <div className='Landing_filter' />
                 </div>
 
                 <div className='carousel-caption d-none d-md-block'>
                   <h1>G.E.M.s University</h1>
-                  <p>Building Legacy Together</p>
-                  <a
-                    href='#!'
-                    className='Landing_btn btn btn-primary'
-                    style={{ color: '#D7D6D6', textShadow: 'none' }}
-                  >
+                  <p className=''>Building Legacy Together</p>
+                  <hr style={{ background: '#ffffff' }} className='' />
+                  <br />
+                  <a href='#!' className='teal-btn'>
                     Our Mission
                   </a>
                 </div>
               </div>
               {/* ---------------Building */}
               <div className='carousel-item'>
-                <div className='Landing_Img_Box_2'>
+                <div className='Landing_Img_Box_4'>
                   <div className='Landing_filter' />
                 </div>
 
                 <div className='carousel-caption d-none d-md-block'>
                   <h1>G.E.M.s University</h1>
-                  <p>Building Legacy Together</p>
-                  <a
-                    href='#!'
-                    className='Landing_btn btn btn-primary'
-                    style={{ color: '#D7D6D6', textShadow: 'none' }}
-                  >
+                  <p className=''>Building Legacy Together</p>
+                  <hr style={{ background: '#ffffff' }} className='' />
+                  <br />
+                  <a href='#!' className='teal-btn'>
                     Our Mission
                   </a>
                 </div>
@@ -72,7 +66,7 @@ const Landing = () => {
       </div>
       <div className='row p-0 m-0 mb-5'>
         <div className='col-12 my-5'>
-          <h5 className='text-center'>Our Upcomming Events</h5>
+          <h5 className='text-center'>Upcomming Events</h5>
         </div>
         <LandingEvents
           img='./images/stock2.jpg'

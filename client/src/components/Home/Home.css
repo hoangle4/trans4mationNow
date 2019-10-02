@@ -16,9 +16,27 @@ blockquote {
 .Landing_Img_Box_2 {
 	width: 100%;
 	height: 100vh;
-	background: url(/images/stock1.jpg) no-repeat center;
+	background: url(/images/adobe1.jpg) no-repeat center;
 	background-size: cover;
-	/* overflow: hidden; */
+	overflow: hidden;
+	justify-content: center;
+}
+
+.Landing_Img_Box_3 {
+	width: 100%;
+	height: 100vh;
+	background: url(/images/adobe2.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
+	justify-content: center;
+}
+
+.Landing_Img_Box_4{
+	width: 100%;
+	height: 100vh;
+	background: url(/images/adobe3.jpg) no-repeat center;
+	background-size: cover;
+	overflow: hidden;
 	justify-content: center;
 }
 
@@ -27,7 +45,7 @@ blockquote {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: rgba(217, 236, 199, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 	overflow: hidden;
 }
 
@@ -71,6 +89,28 @@ blockquote {
 	font-size: 1rem;
 }
 
+.Landing_Event a {
+	color: #eaf0e4;
+}
+
+.green-btn {
+	background: #d9ecc7;
+	color: #07a3b2;
+	padding: 1rem 2rem;
+	border-radius: 0.3rem;
+	border: none;
+}
+
+.teal-btn {
+	background: #07a3b2;
+	color: #eaf0e4;
+	padding: 1rem;
+	border-radius: 0.3rem;
+}
+.teal-btn:hover{
+	text-decoration: none;
+	color: #dbdbdb;
+}
 /* color#eaf0e4 */
 .Footer {
 	background: #07a3b2;
