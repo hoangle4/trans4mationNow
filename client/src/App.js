@@ -19,10 +19,10 @@ const App = () => {
 			<Router>
 				<Navbar />
 				<Switch>
-					<Route exact path={'/'} render={() => <Home />} />
-					<Route exact path={'/contactus'} render={() => <ContactUs />} />
-					<Route exact path={'/event'} render={() => <Event />} />
-					<Route exact path={'/aboutus'} render={() => <AboutUs />} />
+					<Route exact path={'/'} component={Home} />
+					<Route exact path={'/contactus'} component={ContactUs} />
+					<Route exact path={'/event'} component={Event} />
+					<Route exact path={'/aboutus'} component={AboutUs} />
 				</Switch>
 				<Footer />
 			</Router>
