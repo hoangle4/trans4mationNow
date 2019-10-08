@@ -52,6 +52,26 @@ const Navbar = () => (
             Resources
           </a>
         </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#!'>
+            Get Involved
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#!'>
+            Events
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#!'>
+            Donations
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='#!'>
+            Contact Us
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
