@@ -32,7 +32,7 @@ const Home = () => {
   });
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       <Landing />
       <Testimonial />
       <Footer />
