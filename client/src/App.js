@@ -10,25 +10,25 @@ import AboutUs from './components/AboutUs';
 import Donation from './components/Donation';
 
 const App = () => {
-	useEffect(() => {
-		Utils.NavBarAnimation();
-	}, []);
+  useEffect(() => {
+    Utils.NavBarAnimation();
+  }, []);
 
-	return (
-		<div className='container'>
-			<Router>
-				<Navbar />
-				<Switch>
-					<Route exact path={'/'} component={Home} />
-					<Route exact path={'/contactus'} component={ContactUs} />
-					<Route exact path={'/event'} component={Event} />
-					<Route exact path={'/aboutus'} component={AboutUs} />
-					<Route exact path={'/donation'} component={Donation} />
-				</Switch>
-				<Footer />
-			</Router>
-		</div>
-	);
+  return (
+    <div>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path={'/'} component={Home} />
+          <Route exact path={'/contactus'} component={ContactUs} />
+          <Route exact path={'/event'} component={Event} />
+          <Route exact path={'/aboutus'} component={AboutUs} />
+          <Route exact path={'/donation'} component={Donation} />
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
+  );
 };
 
 export default App;

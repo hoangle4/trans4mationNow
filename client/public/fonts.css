@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css?family=Chivo|Patua+One|Kanit|PT+Mono|Space+Mono&display=swap');
+html, p, div, button, i , #root {
+  font-family: 'PT Mono', monospace;
+  font-family: 'Space Mono', monospace;
+  font-family: 'Chivo', sans-serif;
+  font-family: 'Patua One', cursive;
+  font-family: 'Kanit', sans-serif;
+}

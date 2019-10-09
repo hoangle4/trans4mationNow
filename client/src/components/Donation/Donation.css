@@ -1,0 +1,26 @@
+.Donation_Button {
+border: 1px solid #dedede;
+margin-bottom: 1rem;
+font-weight: bold;
+font-size: 1.3rem;
+transition: all .5s ease;
+}
+
+.Donation_Button:hover {
+  color: rgb(247, 247, 247);
+  background-color: rgba(150, 150, 150,.3);
+}
+
+.Donation_Button > img {
+  width: 40px;
+  height: 40px;
+}
+
+.Donation_Accept_Img {
+  height: 25px;
+}
+
+.Donation-Row-1 {
+  background: linear-gradient(to right, #07a3b2, #d9ecc7);
+  padding: 3rem 1.5rem;
+}
