@@ -1,4 +1,7 @@
 .Event_Container {
-  background: linear-gradient(to right, #07a3b2, #d9ecc7);
+  background:linear-gradient(to left, #07a3b2, #d9ecc7 50%, #07a3b2 100%);
+  background-size: 200% 200%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   padding: 1rem;
 }

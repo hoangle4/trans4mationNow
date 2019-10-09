@@ -4,7 +4,6 @@ margin-bottom: 1rem;
 font-weight: bold;
 font-size: 1.3rem;
 transition: all 1s ease;
-color: 
 }
 
 .Donation_Button:hover {
@@ -13,6 +12,7 @@ color:
   background-size:300% 300%;
   background-position: 100%;
   background-repeat: no-repeat;
+  border:1px solid transparent;
 }
 
 .Donation_Button > img {
@@ -22,9 +22,6 @@ color:
 
 .Donation_Accept_Img {
   height: 25px;
-}
-.Donation-Row-1 {
-
 }
 .Donation-Row-2, .Donation-Row-1 {
   background:linear-gradient(to left, #07a3b2, #d9ecc7 50%, #07a3b2 100%);
