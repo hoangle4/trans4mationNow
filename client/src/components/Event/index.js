@@ -5,15 +5,15 @@ import EventList from './EventList';
 const Event = () => {
   return (
     <Fragment>
-      <div className='row'>
-        <div className='col-12'>
+      <div className='row mx-0'>
+        <div className='col-12 px-0'>
           <Jumbotron
             title='UP COMMING EVENTS'
             subtitle='EVENTS PAGE AND CALENDAR'
           />
         </div>
       </div>
-      <div className='row Event_Container'>
+      <div className='row mx-0 Event_Container'>
         <div className='col-12'>
           <div className='container'>
             <EventList
@@ -39,6 +39,40 @@ const Event = () => {
               eventDesc='GEMS University classes beginning.'
               eventDate='September 2020'
               eventId='092020'
+            />
+
+            <EventList
+              imgLink='/images/stock1.jpg'
+              title='Ribbon Cutting Ceremony - September 2020'
+              eventType='Public'
+              eventDesc='Ribbon Cutting Ceremony.'
+              eventDate='September 2020'
+              eventId='092020'
+            />
+
+            <EventList
+              imgLink='/images/stock2.jpg'
+              title='Fun - 2K Walk - Fundraiser 2021'
+              eventType='Public'
+              eventDesc='Fun - 2K Walk.'
+              eventDate='2021'
+              eventId='092021'
+            />
+            <EventList
+              imgLink='/images/stock3.jpg'
+              title='GEMS-GRAND-Ball 2021'
+              eventType='Public'
+              eventDesc='GEMS-GRAND-Ball.'
+              eventDate='2021'
+              eventId='092021'
+            />
+            <EventList
+              imgLink='/images/stock4.jpg'
+              title='Up-Next Gathering 2022'
+              eventType='Public'
+              eventDesc='Up-Next Gathering.'
+              eventDate='2022'
+              eventId='092022'
             />
           </div>
         </div>
