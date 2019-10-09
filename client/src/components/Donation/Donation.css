@@ -3,12 +3,16 @@ border: 1px solid #dedede;
 margin-bottom: 1rem;
 font-weight: bold;
 font-size: 1.3rem;
-transition: all .5s ease;
+transition: all 1s ease;
+color: 
 }
 
 .Donation_Button:hover {
   color: rgb(247, 247, 247);
-  background-color: rgba(150, 150, 150,.3);
+  background:linear-gradient(to left, #07a3b2, #d9ecc7 50%, #07a3b2 100%);
+  background-size:300% 300%;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
 .Donation_Button > img {
@@ -19,8 +23,14 @@ transition: all .5s ease;
 .Donation_Accept_Img {
   height: 25px;
 }
-
 .Donation-Row-1 {
-  background: linear-gradient(to right, #07a3b2, #d9ecc7);
+
+}
+.Donation-Row-2, .Donation-Row-1 {
+  background:linear-gradient(to left, #07a3b2, #d9ecc7 50%, #07a3b2 100%);
+  background-size: 100% 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
   padding: 3rem 1.5rem;
+  border-bottom: 1px #f2f2f2 solid
 }

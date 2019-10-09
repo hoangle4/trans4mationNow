@@ -69,7 +69,7 @@ const Donation = () => {
           </form>
         </div>
       </div>
-      <div className='row my-5 mx-0 '>
+      <div className='row mx-0 Donation-Row-2'>
         <div className='col-12 py-0 text-center'>
           <h5>BETTER YET, SEE US IN PERSON!</h5>
           <p>
