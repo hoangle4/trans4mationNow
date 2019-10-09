@@ -1,40 +1,83 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Jumbotron from '../Jumbotron';
 import './Event.css';
+import EventList from './EventList';
 const Event = () => {
   return (
-    <div className='row m-0 Event_Container'>
-      <div className='col-md-4 col-xs-12 p-0 pr-3'>
-        <div
-          className='Event_Img_Container'
-          style={{
-            background: 'url(/images/adobe1.jpg) no-repeat center',
-            width: '100%',
-            height: '100%'
-          }}
-        ></div>
+    <Fragment>
+      <div className='row mx-0'>
+        <div className='col-12 px-0'>
+          <Jumbotron
+            title='UP COMMING EVENTS'
+            subtitle='EVENTS PAGE AND CALENDAR'
+          />
+        </div>
       </div>
-      <div className='col-md-8 col-xs-12 p-0'>
-        <h5>Title One</h5>
-        <small className='text-muted'>Private</small>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          laudantium est doloremque nulla dignissimos similique minima modi quod
-          aliquam dolor tempore officia nihil qui praesentium porro ducimus,
-          adipisci vitae repellendus dicta reiciendis distinctio natus magni! Ad
-          distinctio fuga libero, tempora dicta alias minus ab unde autem iure
-          fugit exercitationem debitis repudiandae facere, reiciendis doloremque
-          porro deserunt quod sed officiis soluta, repellat velit dolorum
-          pariatur. Exercitationem repellat, fuga vero, quos eveniet facere qui
-          tempore voluptatum molestiae eligendi odio libero. Quos eos impedit
-          architecto, ad recusandae magni ipsa. Molestias porro cumque itaque.
-          Unde amet, optio modi libero nemo delectus tenetur assumenda earum.
-        </p>
-        <p>
-          <strong>12-12-2019</strong>
-        </p>
-        <button className='teal-btn'>Sign Up</button>
+      <div className='row mx-0 Event_Container'>
+        <div className='col-12'>
+          <div className='container'>
+            <EventList
+              imgLink='/images/adobe3.jpg'
+              title='The Great Reveal TFN website - November 2019'
+              eventType='Public'
+              eventDesc='The Great Reveal TFN website.'
+              eventDate='November 2019'
+              eventId='112019'
+            />
+            <EventList
+              imgLink='/images/adobe1.jpg'
+              title='GEMS University online sign-up – March 2020'
+              eventType='Public'
+              eventDesc='GEMS University online sign-up.'
+              eventDate='March 2020'
+              eventId='032020'
+            />
+            <EventList
+              imgLink='/images/adobe2.jpg'
+              title='GEMS University classes beginning September 2020'
+              eventType='Private'
+              eventDesc='GEMS University classes beginning.'
+              eventDate='September 2020'
+              eventId='092020'
+            />
+
+            <EventList
+              imgLink='/images/stock1.jpg'
+              title='Ribbon Cutting Ceremony - September 2020'
+              eventType='Public'
+              eventDesc='Ribbon Cutting Ceremony.'
+              eventDate='September 2020'
+              eventId='092020'
+            />
+
+            <EventList
+              imgLink='/images/stock2.jpg'
+              title='Fun - 2K Walk - Fundraiser 2021'
+              eventType='Public'
+              eventDesc='Fun - 2K Walk.'
+              eventDate='2021'
+              eventId='092021'
+            />
+            <EventList
+              imgLink='/images/stock3.jpg'
+              title='GEMS-GRAND-Ball 2021'
+              eventType='Public'
+              eventDesc='GEMS-GRAND-Ball.'
+              eventDate='2021'
+              eventId='092021'
+            />
+            <EventList
+              imgLink='/images/stock4.jpg'
+              title='Up-Next Gathering 2022'
+              eventType='Public'
+              eventDesc='Up-Next Gathering.'
+              eventDate='2022'
+              eventId='092022'
+            />
+          </div>
+        </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 

@@ -1,0 +1,36 @@
+#Jumbotron {
+  text-shadow: 2px 3px 3px #003e44;
+  color: #eaf0e4;
+  margin-bottom: 0;
+  border-bottom: 1px #f2f2f2 solid
+}
+/* #003e44; */
+#Jumbotron > div > p  {
+  text-shadow: 2px 3px 3px #003e44;
+  color: #eaf0e4;
+  font-weight: 400;
+}
+
+#Jumbotron > div > h1 {
+  font-size:3.5rem;
+  font-weight:300;
+  line-height:1.2
+}
+
+@media only screen and (max-width: 766px) {
+  #Jumbotron > div > h1 {
+    font-size:2.5rem;
+    font-weight:300;
+    line-height:1.2
+  }
+  #Jumbotron > div > p {
+    font-size: 1rem
+  }
+}
+@media only screen and (max-width: 488px) {
+  #Jumbotron > div > h1 {
+    font-size:1.8rem;
+    font-weight:300;
+    line-height:1.2
+  }
+}
