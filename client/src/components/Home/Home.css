@@ -35,7 +35,7 @@ blockquote {
 	justify-content: center;
 }
 
-.Landing_Img_Box_4{
+.Landing_Img_Box_4 {
 	width: 100%;
 	height: 100vh;
 	background: url(/images/adobe3.jpg) no-repeat center;
@@ -43,7 +43,6 @@ blockquote {
 	overflow: hidden;
 	justify-content: center;
 }
-
 
 .Landing_filter {
 	position: absolute;
@@ -87,25 +86,24 @@ blockquote {
 	background: linear-gradient(to left, #07a3b2, #d9ecc7);
 }
 
-.Story_Row {
-	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
-}
+/* .Story_Row {
+	background: linear-gradient(to right, #07a3b2, #d9ecc7);
+} */
 .Story_Row > div:first-child {
-	background: none!important;
+	background: none !important;
 }
 
-.Story_Row > div:nth-child(even)  {
-	background: linear-gradient(to left, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1))
+.Story_Row > div:nth-child(even) {
+	background: linear-gradient(to left, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1));
 }
 
-.Story_Row > div:nth-child(odd)  {
-	background: linear-gradient(to right, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1))
+.Story_Row > div:nth-child(odd) {
+	background: linear-gradient(to right, rgba(7, 163, 178, 0.1), rgba(217, 236, 199, 0.1));
 }
 
 .Landing_Event {
 	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
 	font-size: 1rem;
-
 }
 
 .Landing_Event a {
@@ -131,7 +129,7 @@ blockquote {
 	padding: 1rem;
 	border-radius: 0.3rem;
 }
-.teal-btn:hover{
+.teal-btn:hover {
 	text-decoration: none;
 	color: #dbdbdb;
 }
@@ -140,7 +138,7 @@ blockquote {
 .Testimonial_card {
 	position: relative;
 	transform: translateX(50%);
-	right:-50%;
+	right: -50%;
 	overflow: hidden;
 	width: 350px;
 	height: 250px;
@@ -151,7 +149,6 @@ blockquote {
 
 .Testimonial_card > img {
 	text-align: center;
-
 }
 .Footer {
 	background: #07a3b2;
