@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () => (
 	<nav className='Navbar navbar navbar-expand-lg navbar-light font-weight-bold fixed-top'>
-		<a className='navbar-brand' href='/'>
+		<Link className='navbar-brand' to='/'>
 			<img src='images/logo-clear.png' alt='trans4mation logo' className='Navbar_logo' />
-		</a>
+		</Link>
 		<h5 className='Navbar_h5'>G.E.M.s University</h5>
 		<button
 			className='navbar-toggler'
@@ -21,20 +21,20 @@ const Navbar = () => (
 		<div className='collapse navbar-collapse justify-content-end' id='navbarSupportedContent'>
 			<ul className='navbar-nav'>
 				<li className='nav-item'>
-					<a className='nav-link' href='/aboutus'>
+					<Link className='nav-link' to='/aboutus'>
 						About Us
-					</a>
+					</Link>
 				</li>
 
 				<li className='nav-item'>
-					<a className='nav-link' href='#!'>
+					<Link className='nav-link' to='#!'>
 						Resources
-					</a>
+					</Link>
 				</li>
 				<li className='nav-item'>
-					<a className='nav-link' href='#!'>
+					<Link className='nav-link' to='#!'>
 						Get Involved
-					</a>
+					</Link>
 				</li>
 				<li className='nav-item'>
 					<Link className='nav-link' to='/event'>
@@ -42,14 +42,14 @@ const Navbar = () => (
 					</Link>
 				</li>
 				<li className='nav-item'>
-					<a className='nav-link' href='#!'>
+					<Link className='nav-link' to='/donation'>
 						Donations
-					</a>
+					</Link>
 				</li>
 				<li className='nav-item'>
-					<a className='nav-link' href='/contactus'>
+					<Link className='nav-link' to='/contactus'>
 						Contact Us
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</div>

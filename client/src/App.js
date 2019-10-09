@@ -5,9 +5,9 @@ import Home from './components/Home';
 import ContactUs from './components/ContactUs';
 import Navbar from './components/Home/Navbar';
 import Footer from './components/Home/Footer';
-
 import Event from './components/Event';
 import AboutUs from './components/AboutUs';
+import Donation from './components/Donation';
 
 const App = () => {
 	useEffect(() => {
@@ -23,6 +23,7 @@ const App = () => {
 					<Route exact path={'/contactus'} component={ContactUs} />
 					<Route exact path={'/event'} component={Event} />
 					<Route exact path={'/aboutus'} component={AboutUs} />
+					<Route exact path={'/donation'} component={Donation} />
 				</Switch>
 				<Footer />
 			</Router>
