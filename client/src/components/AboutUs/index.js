@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import Jumbotron from '../Jumbotron';
+import './About-Us.css';
 const AboutUs = () => {
   return (
-    <div className='row m-0'>
+    <div className='row m-0 About-Us-Row'>
       <div className='col-12 p-0'>
         <Jumbotron
           title='About GEMS'
@@ -16,7 +17,7 @@ const AboutUs = () => {
         />
       </div>
       <div className='col-12 my-5 py-5 '>
-        <div className='row'>
+        <div className='row About-Us-Nested-Row'>
           <div className='col-md-3 col-xs-12'>
             <h5 className='my-5'>Welcome to G.E.M.S</h5>
           </div>
@@ -34,7 +35,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className='col-12  my-5 py-5'>
-        <div className='row'>
+        <div className='row About-Us-Nested-Row'>
           <div className='col-md-3 col-xs-12'>
             <h5 className='my-5'>G.E.M.S. INVESTMENT</h5>
           </div>
@@ -50,7 +51,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className='col-12  my-5 py-5'>
-        <div className='row'>
+        <div className='row About-Us-Nested-Row'>
           <div className='col-md-3 col-xs-12'>
             <h5 className='my-5'>TRANS4MATION THAT EMPOWERS!!!</h5>
           </div>
@@ -66,7 +67,7 @@ const AboutUs = () => {
 
       {/* ----------------- */}
       <div className='col-12  my-5 py-5'>
-        <div className='row'>
+        <div className='row About-Us-Nested-Row'>
           <div className='col-md-4 col-xs-12 p-0 px-2'>
             <h5 className='my-5 text-center'>HISTORY</h5>
 
