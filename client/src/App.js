@@ -7,7 +7,7 @@ import Footer from './components/Home/Footer';
 import Event from './components/Event';
 import AboutUs from './components/AboutUs';
 import Donation from './components/Donation';
-
+import Resources from './components/Resources';
 const App = () => {
   useEffect(() => {
     Utils.NavBarAnimation();
@@ -22,6 +22,7 @@ const App = () => {
           <Route exact path={'/event'} component={Event} />
           <Route exact path={'/aboutus'} component={AboutUs} />
           <Route exact path={'/donation'} component={Donation} />
+          <Route exact path={'/resources'} component={Resources} />
         </Switch>
         <Footer />
       </Router>

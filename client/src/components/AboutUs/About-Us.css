@@ -12,4 +12,6 @@
   background-repeat: no-repeat;
   padding: 1rem 0;
   margin: 0 1rem;
+  text-shadow: 1px 1px 1px #ffffff;
+  /* box-shadow: 2px 1px 1px rgba(217, 236, 199,0.5); */
 }

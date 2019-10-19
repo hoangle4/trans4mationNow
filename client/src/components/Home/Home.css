@@ -9,8 +9,10 @@ blockquote {
 
 .Navbar {
 	z-index: 50;
-	background: rgba(7, 163, 178, 0);
+	background: rgba(7, 163, 178, 0.5);
 	transition: all 500ms ease-in-out;
+	color: #ffffff;
+	text-shadow: 1px 2px 2px #003e44;
 }
 
 .Navbar_logo {
@@ -86,9 +88,9 @@ blockquote {
 	background: linear-gradient(to left, #07a3b2, #d9ecc7);
 }
 
-/* .Story_Row {
-	background: linear-gradient(to right, #07a3b2, #d9ecc7);
-} */
+.Story_Row {
+	text-shadow: 1px 1px 1px #ffffff;
+}
 .Story_Row > div:first-child {
 	background: none !important;
 }
@@ -104,6 +106,7 @@ blockquote {
 .Landing_Event {
 	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
 	font-size: 1rem;
+	text-shadow: 1px 1px 1px #ffffff;
 }
 
 .Landing_Event a {
