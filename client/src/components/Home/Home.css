@@ -176,3 +176,15 @@ blockquote {
 	margin-bottom: 2.5rem;
 	list-style-type: none;
 }
+
+
+@media only screen and (max-width: 992px)  {
+	.Navbar_h5 {
+		position: relative;
+		left: 0;
+		transform: none;
+	}
+	.Navbar {
+		text-align: center;
+	}
+}
