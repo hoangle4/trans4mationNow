@@ -59,7 +59,7 @@ const Resources = () => {
                   link: 'http://www.grandfamilies.org/'
                 },
                 {
-                  desc: 'Power of Attorney 2018.',
+                  desc: 'Power of Attorney.',
                   link:
                     'https://www.ohiograndparentkinship.org/documents/Power-of-Attorney_2018.pdf'
                 }
