@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Landing_Event = ({ img, title, desc, date }) => (
   <div className='col-xs-12 col-md-4 m-0 Event_Col'>
     <div className='row m-0'>
@@ -10,7 +10,10 @@ const Landing_Event = ({ img, title, desc, date }) => (
         <div className='p-2'>
           <h5 className='card-title'>{title}</h5>
           <p className='card-text'>
-            {desc} <a href='/'>learn more</a>{' '}
+            {desc}{' '}
+            <Link className='text-primary' to='/event'>
+              learn more
+            </Link>{' '}
           </p>
           <p className='card-text'>{date} </p>
         </div>

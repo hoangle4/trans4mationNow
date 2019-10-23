@@ -70,22 +70,22 @@ const Landing = () => {
             <h5 className='text-center'>Upcomming Events</h5>
           </div>
           <LandingEvents
-            img='./images/stock2.jpg'
-            title='Event 2'
-            desc='Lorem ipsum dolor sit amet...'
-            date='20-10-2020'
+            img='/images/adobe1.jpg'
+            title='GEMS University online sign-up – March 2020'
+            desc='GEMS University online sign-up.'
+            date='March 2020'
           />
           <LandingEvents
-            img='./images/stock3.jpg'
-            title='Event 3'
-            desc='Lorem ipsum dolor sit amet.... '
-            date='20-10-2020'
+            img='/images/adobe2.jpg'
+            title='GEMS University classes beginning September 2020'
+            desc='GEMS University classes beginning.'
+            date='September 2020'
           />
           <LandingEvents
-            img='./images/stock4.jpg'
-            title='Event 1'
-            desc='Lorem ipsum dolor sit amet...'
-            date='20-10-2020'
+            img='/images/stock1.jpg'
+            title='Ribbon Cutting Ceremony - September 2020'
+            desc='Ribbon Cutting Ceremony.'
+            date='September 2020'
           />
         </div>
 

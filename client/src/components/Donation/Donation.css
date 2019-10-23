@@ -29,5 +29,6 @@ transition: all 1s ease;
   background-position: 50% 100%;
   background-repeat: no-repeat;
   padding: 3rem 1.5rem;
-  border-bottom: 1px #f2f2f2 solid
+  border-bottom: 1px #f2f2f2 solid;
+  text-shadow: 1px 1px 1px #ffffff;
 }

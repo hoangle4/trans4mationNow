@@ -18,19 +18,29 @@ const Footer = () => {
               <li>
                 <strong>Phone</strong>
               </li>
-              <li>614 924 0007</li>
-              <li>614 924 0007</li>
+              <li>
+                <a href='tel:614 924 0007'>614 924 0007</a>
+              </li>
+              <li>
+                <a href='tel:614 924 0007'>614 924 0007</a>
+              </li>
             </ul>
             <ul className='Footer_UL'>
               <li>
                 <strong>Email</strong>
               </li>
-              <li>gems@tfnow.org</li>
-              <li>gems@trans4mationnow.org</li>
+              <li>
+                <a href='mailto:gems@tfnow.org'>gems@tfnow.org</a>
+              </li>
+              <li>
+                <a href='mailto:gems@trans4mationnow.org'>
+                  gems@trans4mationnow.org
+                </a>
+              </li>
             </ul>
           </div>
           <div className='col-md-6 col-xs-12 p-0'>
-            <h5>Send Us Message</h5>
+            <h5>Send Us a Message</h5>
             <form className='p-3'>
               <div className='form-group'>
                 <div className='form-group'>

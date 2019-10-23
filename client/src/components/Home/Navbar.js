@@ -9,7 +9,7 @@ const Navbar = () => (
         className='Navbar_logo'
       />
     </Link>
-    <h5 className='Navbar_h5'>G.E.M.s University</h5>
+
     <button
       className='navbar-toggler'
       type='button'
@@ -38,14 +38,22 @@ const Navbar = () => (
             Resources
           </Link>
         </li>
+
         <li className='nav-item'>
           <Link className='nav-link' to='/event'>
             Events
           </Link>
         </li>
+
         <li className='nav-item'>
           <Link className='nav-link' to='donation'>
             Donations
+          </Link>
+        </li>
+
+        <li className='nav-item'>
+          <Link to='/gems' className='nav-link'>
+            <h5 className='Navbar_h5'>G.E.M.s University</h5>
           </Link>
         </li>
       </ul>
