@@ -67,7 +67,7 @@ const Landing = () => {
       <div className='container'>
         <div className='row p-0 m-0 Landing_Event'>
           <div className='col-12 my-5'>
-            <h5 className='text-center'>Upcomming Events</h5>
+            <h5 className='text-center'>Upcoming Events</h5>
           </div>
           <LandingEvents
             img='/images/adobe1.jpg'

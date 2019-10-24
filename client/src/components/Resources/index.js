@@ -22,7 +22,7 @@ const Resources = () => {
               groupItem={[
                 {
                   desc:
-                    'Ohio Grandparent Kinship Coalition The Ohio Grandparent/Kinship Coalition(OGKC) is an organization consisting of kinship caregivers, kinship caregiver advocates and agencies throughout Ohio.',
+                    'The Ohio Grandparent/Kinship Coalition(OGKC) is an organization consisting of kinship caregivers, kinship caregiver advocates and agencies throughout Ohio.',
                   link: 'https://www.ohiograndparentkinship.org/'
                 }
               ]}
@@ -59,7 +59,7 @@ const Resources = () => {
                   link: 'http://www.grandfamilies.org/'
                 },
                 {
-                  desc: 'Power of Attorney 2018.',
+                  desc: 'Power of Attorney.',
                   link:
                     'https://www.ohiograndparentkinship.org/documents/Power-of-Attorney_2018.pdf'
                 }

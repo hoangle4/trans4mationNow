@@ -102,6 +102,40 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* ----------------- */}
+      <div className='col-12  my-5 py-5'>
+        <div className='row About-Us-Nested-Row'>
+          <div className='col-md-4 col-xs-12 p-0 px-2'>
+            <h5 className='my-5 text-center'>Our Vision</h5>
+
+            <p className='card-text'>
+              Our vision is to build a powerful and lasting support network
+              where guardians and their children are transformed by learning and
+              leaning on the strengths of each other.
+            </p>
+          </div>
+          <div className='col-md-4 col-xs-12 p-0 px-2'>
+            <h5 className='my-5 text-center'>Our Mission</h5>
+
+            <p className='card-text'>
+              The mission is to provide a support network designed to help
+              everyone recognize their personal strengths and identities through
+              the assistance of mentors and leaders within the local
+              community's.
+            </p>
+          </div>
+          <div className='col-md-4 col-xs-12 p-0 px-2'>
+            <h5 className='my-5 text-center'>Our Values</h5>
+
+            <p className='card-text'>
+              We value the wisdom and hindsight of both guardians and children
+              entering our program and we are dedicated to increase
+              accountability, positive behavior modeling and continuous
+              improvement in the lives of our clients.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
