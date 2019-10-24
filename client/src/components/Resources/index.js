@@ -62,6 +62,16 @@ const Resources = () => {
                   desc: 'Power of Attorney.',
                   link:
                     'https://www.ohiograndparentkinship.org/documents/Power-of-Attorney_2018.pdf'
+                },
+                {
+                  desc: 'Grandparents Rights In Ohio.',
+                  link:
+                    'https://www.dissolutionanddivorce.com/grandparents-rights-ohio/#targetText=Ohio%20law%20states%20that%20if,best%20interest%20of%20the%20child'
+                },
+                {
+                  desc: 'The Grandparents Act.',
+                  link:
+                    'https://www.congress.gov/bill/115th-congress/senate-bill/1091/text'
                 }
               ]}
             />
