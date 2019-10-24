@@ -8,7 +8,7 @@ const Event = () => {
       <div className='row mx-0'>
         <div className='col-12 px-0'>
           <Jumbotron
-            title='UP COMMING EVENTS'
+            title='UPCOMING EVENTS'
             subtitle='EVENTS PAGE AND CALENDAR'
           />
         </div>
