@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='row mx-0 Footer'>
       <div className='col-12 p-0'>
         <div className='row mx-0 border-bottom mb-5'>
           <div className='col-md-6 col-xs-12 p-0'>
-            <h5>Contact Us</h5>
+            <h3>Contact Us</h3>
             <ul className='Footer_UL'>
               <li className='Footer-li'>
                 <strong>Address</strong>
@@ -19,13 +19,13 @@ const Footer = () => {
                 <strong>Phone</strong>
               </li>
               <li className='Footer-li'>
-                <a href='tel:614 924 0007' className=''>
-                  614 924 0007
+                <a href='tel:6149240007' className=''>
+                  Phone: 614 924 0007
                 </a>
               </li>
               <li className='Footer-li'>
-                <a href='tel:614 924 0007' className=''>
-                  614 924 0007
+                <a href='fax:6145751919' className=''>
+                  Fax: 614 575 1919
                 </a>
               </li>
             </ul>
@@ -44,7 +44,20 @@ const Footer = () => {
             </ul>
           </div>
           <div className='col-md-6 col-xs-12 p-0'>
-            <h5>Send Us a Message</h5>
+            <div className='row '>
+              <div className='col-md-6 p-0'>
+                <h3>Send Us a Message</h3>
+              </div>
+              <div className='col-md-6 p-0 text-center'>
+                <ul className='list-group'>
+                  <li className='list-group-item bg-transparent border-0'>
+                    <Link to='/survey' className='green-btn'>
+                      Take a Survey!
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <form className='p-3'>
               <div className='form-group'>
                 <div className='form-group'>

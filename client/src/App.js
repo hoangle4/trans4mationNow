@@ -8,6 +8,7 @@ import Event from './components/Event';
 import AboutUs from './components/AboutUs';
 import Donation from './components/Donation';
 import Resources from './components/Resources';
+import Survey from './components/Survey';
 const App = () => {
   useEffect(() => {
     Utils.NavBarAnimation();
@@ -23,6 +24,7 @@ const App = () => {
           <Route exact path={'/aboutus'} component={AboutUs} />
           <Route exact path={'/donation'} component={Donation} />
           <Route exact path={'/resources'} component={Resources} />
+          <Route exact path={'/survey'} component={Survey} />
         </Switch>
         <Footer />
       </Router>
