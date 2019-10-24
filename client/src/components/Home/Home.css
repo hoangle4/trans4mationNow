@@ -71,9 +71,11 @@ blockquote {
 }
 
 .Navbar_h5 {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
+	right: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 2rem;
 }
 
 .Testimonial_Slide_Right {
@@ -156,7 +158,7 @@ blockquote {
 }
 .Footer {
 	background: #07a3b2;
-	color: #eaf0e4;
+	color: #ffffff;
 	padding: 1rem;
 }
 .Footer h5 {
@@ -165,11 +167,12 @@ blockquote {
 
 .Footer_UL > li:first-child {
 	margin-bottom: 0.5rem;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 
 .Footer_UL > li {
-	font-size: 0.9rem;
+	font-size: 1.2rem;
+	text-shadow: 2px 1px 1px #003e44;
 }
 
 .Footer_UL {
@@ -177,12 +180,17 @@ blockquote {
 	list-style-type: none;
 }
 
+.Footer-li > a {
+	color: #ffffff;
+	font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 992px)  {
 	.Navbar_h5 {
 		position: relative;
 		left: 0;
 		transform: none;
+		font-size: 1.5rem;
 	}
 	.Navbar {
 		text-align: center;

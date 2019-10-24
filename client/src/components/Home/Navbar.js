@@ -28,6 +28,13 @@ const Navbar = () => (
     >
       <ul className='navbar-nav'>
         <li className='nav-item'>
+          <Link to='/gems' className='nav-link Navbar_h5'>
+            G.E.M.s University
+          </Link>
+        </li>
+      </ul>
+      <ul className='navbar-nav'>
+        <li className='nav-item'>
           <Link className='nav-link' to='/aboutus'>
             About Us
           </Link>
@@ -48,12 +55,6 @@ const Navbar = () => (
         <li className='nav-item'>
           <Link className='nav-link' to='donation'>
             Donations
-          </Link>
-        </li>
-
-        <li className='nav-item'>
-          <Link to='/gems' className='nav-link'>
-            <h5 className='Navbar_h5'>G.E.M.s University</h5>
           </Link>
         </li>
       </ul>
