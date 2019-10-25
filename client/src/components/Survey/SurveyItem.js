@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-const SurveyItem = ({ label, choices, choiceName, value, setValue }) => {
+const SurveyItem = ({ label, choices, choiceName, setValue }) => {
   return (
-    <div>
-      <h5>{label}</h5>
+    <div className='mb-5'>
+      <h4>{label}</h4>
       {choices.length !== 0
         ? choices.map((c, i) => (
             <div key={i} className='custom-control custom-radio'>
@@ -33,7 +33,6 @@ SurveyItem.propTypes = {
   label: PropTypes.string.isRequired,
   choices: PropTypes.array.isRequired,
   choiceName: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
   setValue: PropTypes.func.isRequired
 };
 
