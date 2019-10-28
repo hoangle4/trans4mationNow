@@ -29,7 +29,7 @@ const Navbar = () => (
       <ul className='navbar-nav'>
         <li className='nav-item'>
           <Link to='/gems' className='nav-link Navbar_h5'>
-            G.E.M.s University
+            G.E.Ms University
           </Link>
         </li>
       </ul>

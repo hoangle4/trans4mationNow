@@ -8,7 +8,7 @@ const Resources = () => {
       <div className='row mx-0'>
         <div className='col-12 px-0'>
           <Jumbotron
-            title='Learn G.E.M.S'
+            title='Learn G.E.Ms'
             subtitle='with these in-dept resources'
           />
         </div>

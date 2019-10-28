@@ -35,7 +35,7 @@ const Landing = () => {
                 </div>
 
                 <div className='carousel-caption d-none d-md-block'>
-                  <h1>G.E.M.s University</h1>
+                  <h1>G.E.Ms University</h1>
                   <p className=''>Building Legacy Together</p>
                   <hr style={{ background: '#ffffff' }} className='' />
                   <br />
@@ -51,7 +51,7 @@ const Landing = () => {
                 </div>
 
                 <div className='carousel-caption d-none d-md-block'>
-                  <h1>G.E.M.s University</h1>
+                  <h1>G.E.Ms University</h1>
                   <p className=''>Building Legacy Together</p>
                   <hr style={{ background: '#ffffff' }} className='' />
                   <br />
@@ -71,14 +71,14 @@ const Landing = () => {
           </div>
           <LandingEvents
             img='/images/adobe1.jpg'
-            title='GEMS University online sign-up – March 2020'
-            desc='GEMS University online sign-up.'
+            title='G.E.Ms University online sign-up – March 2020'
+            desc='G.E.Ms University online sign-up.'
             date='March 2020'
           />
           <LandingEvents
             img='/images/adobe2.jpg'
-            title='GEMS University classes beginning September 2020'
-            desc='GEMS University classes beginning.'
+            title='G.E.Ms University classes beginning September 2020'
+            desc='G.E.Ms University classes beginning.'
             date='September 2020'
           />
           <LandingEvents

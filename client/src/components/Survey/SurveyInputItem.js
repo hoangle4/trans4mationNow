@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const SurveyInputItem = ({ label, value, choiceName, setValue }) => {
