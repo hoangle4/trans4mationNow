@@ -8,7 +8,7 @@ const Donation = () => {
         title='Transformation Now Inc.'
         subtitle={
           <Fragment>
-            <strong>GRANDPARENTS IN COLUMBUS WELCOME TO G.E.M.S.</strong>
+            <strong>GRANDPARENTS IN COLUMBUS WELCOME TO G.E.Ms.</strong>
             <br />
             <strong>"GRAND" EDUCATION MIND'S</strong>
           </Fragment>
@@ -19,7 +19,7 @@ const Donation = () => {
           <h3>Help Our Cause</h3>
           <p style={{ textTransform: 'uppercase' }}>
             TRANSFORMATIONNOW INC. IS GRATEFUL FOR YOUR GENEROSITY, AND MOST
-            IMPORTANTLY YOUR COMMITMENT TO OUR MISSION ON SUPPORTING G.E.M.S. AS
+            IMPORTANTLY YOUR COMMITMENT TO OUR MISSION ON SUPPORTING G.E.Ms. AS
             THEY CONTRIBUTE TO OUR NEXT GENERATION. YOUR DONATION HELPS US TO
             MEET OUR GOALS AND FUND OUR MISSION. THANK YOU! <br />
             <strong>
@@ -75,16 +75,16 @@ const Donation = () => {
       </div>
       <div className='row mx-0 Donation-Row-2'>
         <div className='col-12 py-0 text-center'>
-          <h5>BETTER YET, SEE US IN PERSON!</h5>
+          <h5>Better yet, make an appointment to see us!</h5>
           <p>
-            Get Involved in Columbus! We love our G.E.M.S, to feel free to
+            Get Involved in Columbus! We love our G.E.Ms, to feel free to
             contact us during normal business hours.
           </p>
 
           <address>
-            TRANSFORMATIONNOW <br />
-            1561 Old Leonard Ave <br />
-            Columbus, OH 43219
+            TRANSFORMATIONNOW INC. <br />
+            PO BOX 422 <br />
+            BRICE, OH 43109
           </address>
         </div>
       </div>

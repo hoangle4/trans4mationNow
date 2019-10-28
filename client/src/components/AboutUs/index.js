@@ -24,10 +24,10 @@ const AboutUs = () => {
           <div className='col-md-8 col-xs-12'>
             <p className='card-text'>
               TransformationNow is a faith-based, non-profit organization that
-              offers a program called “G.E.M.S” GRAND Mother’s, GRAND Fathers
-              and GRAND Mentor’s Educating Mind’s. Our program is designed to
-              help the younger generation recognize their personal strengths and
-              identity through the assistance and leadership of their G.E.M.S.
+              offers a program called “G.E.M.S” GRAND Mothers, GRAND Fathers and
+              GRAND Mentors Educating Minds. Our program is designed to help the
+              younger generation recognize their personal strengths and identity
+              through the assistance and leadership of their G.E.M.S.
               TransformationNow is going back to the basics “It takes a village
               to raise a child. “African Proverb”
             </p>
@@ -90,7 +90,7 @@ const AboutUs = () => {
             <h5 className='my-5 text-center'>G.E.M.S BY DEFINITION</h5>
 
             <p className='card-text'>
-              G -Grand E - Educate M - Mind Whether you are a "GRAND" Father,
+              G - Grand E - Educate M - Mind Whether you are a "GRAND" Father,
               "GRAND" Mother or "GRAND" Mentor you are valuable and priceless.
               As a G.E.M.S., you have given the wealth of time, given loving
               care to family and given personal and professional advice. "GRAND"
