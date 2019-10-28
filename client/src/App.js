@@ -10,7 +10,7 @@ import Donation from './components/Donation';
 import Resources from './components/Resources';
 import Survey from './components/Survey';
 import GEMsUniversity from './components/GEMsUniversity';
-
+import GemForm from './components/GEMsUniversity/GemForm';
 const App = () => {
   useEffect(() => {
     Utils.NavBarAnimation();
@@ -28,6 +28,7 @@ const App = () => {
           <Route exact path={'/resources'} component={Resources} />
           <Route exact path={'/survey'} component={Survey} />
           <Route exact path={'/gems'} component={GEMsUniversity} />
+          <Route exact path={'/gems-signup'} component={GemForm} />
         </Switch>
         <Footer />
       </Router>
