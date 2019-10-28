@@ -154,6 +154,7 @@ const GemForm = () => {
               inputName='emergencyContact'
               setValue={hanleOnChange}
             />
+            <button className='green-btn'>Submit</button>
           </form>
         </div>
       </div>

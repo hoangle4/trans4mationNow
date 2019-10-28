@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const GemFormItem = ({ label, value, inputName, setValue }) => {
   return (
-    <div className='mb-5 form-group'>
+    <div className='mb-3 form-group'>
       <h5 className=''>{label}</h5>
       <input
         name={inputName}
