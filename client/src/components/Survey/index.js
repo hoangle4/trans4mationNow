@@ -108,16 +108,18 @@ const Survey = () => {
               setValue={hanleOnChange}
             />
             <SurveyInputItem
-              label='If you are comfortable with sharing, what kind of things you like doing together with your grandchild or relative?'
+              label='If you are comfortable with sharing, what kinds of things do you like doing together with your grandchild or relative?'
               value={activity}
               choiceName='activity'
               setValue={hanleOnChange}
+              placeholder='movies, games...'
             />
             <SurveyInputItem
-              label='Would you like to provide additional feedback? If so, please provide your contact information?'
+              label='Would you like to provide additional feedback? If so, please provide your contact information.'
               value={additional}
               choiceName='additional'
               setValue={hanleOnChange}
+              placeholder='address, phone number, email...'
             />
             <input
               style={{ float: 'right' }}
