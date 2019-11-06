@@ -1,10 +1,14 @@
 .ResourceItem-Col {
-  background:linear-gradient(to left,rgba(242, 242, 242,0.5), rgba(217, 236, 199,0.5) 50%, rgba(242, 242, 242,0.5)100%);
-  background-size: 200% 200%;
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  padding: 1rem;
-  margin-right:1.5rem;
-  margin-left:1.5rem;
-  text-shadow: 1px 1px 1px #ffffff;
+	background: linear-gradient(
+		to left,
+		rgba(242, 242, 242, 0.5),
+		rgba(217, 236, 199, 0.5) 50%,
+		rgba(242, 242, 242, 0.5)100%
+	);
+	background-size: 200% 200%;
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+	padding: 1rem;
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
 }
