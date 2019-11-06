@@ -12,7 +12,6 @@ blockquote {
 	background: rgba(7, 163, 178, 0.5);
 	transition: all 500ms ease-in-out;
 	color: #ffffff;
-	text-shadow: 1px 2px 2px #003e44;
 }
 
 .Navbar_logo {
@@ -59,7 +58,6 @@ blockquote {
 	text-align: center;
 	top: 50%;
 	font-size: 2.5rem;
-	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .Landing_p {
@@ -67,16 +65,15 @@ blockquote {
 	text-align: center;
 	top: 50%;
 	font-size: 1.5rem;
-	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
-.Navbar_h5 {
+/* .Navbar_h5 {
 	position: relative;
 	right: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 2rem;
-}
+} */
 
 .Testimonial_Slide_Right {
 	width: 100%;
@@ -91,7 +88,6 @@ blockquote {
 }
 
 .Story_Row {
-	text-shadow: 1px 1px 1px #ffffff;
 }
 .Story_Row > div:first-child {
 	background: none !important;
@@ -108,7 +104,6 @@ blockquote {
 .Landing_Event {
 	/* background: linear-gradient(to right, #07a3b2, #d9ecc7); */
 	font-size: 1rem;
-	text-shadow: 1px 1px 1px #ffffff;
 }
 
 .Landing_Event a {
@@ -172,7 +167,6 @@ blockquote {
 
 .Footer_UL > li {
 	font-size: 1.2rem;
-	text-shadow: 2px 1px 1px #003e44;
 }
 
 .Footer_UL {
@@ -185,13 +179,13 @@ blockquote {
 	font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 992px)  {
-	.Navbar_h5 {
+@media only screen and (max-width: 992px) {
+	/* .Navbar_h5 {
 		position: relative;
 		left: 0;
 		transform: none;
 		font-size: 1.5rem;
-	}
+	} */
 	.Navbar {
 		text-align: center;
 	}

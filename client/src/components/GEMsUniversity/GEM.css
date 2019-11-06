@@ -1,19 +1,17 @@
 .GEMs-List {
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  list-style-type:none;
- 
+	margin-bottom: 1.5rem;
+	font-style: italic;
+	list-style-type: none;
 }
 .GEMs-List > li {
-  background: none;
+	background: none;
 }
 
 .GEMs-List > li > a {
-  color:black;
-  border: 1px solid #000
+	color: black;
+	border: 1px solid #000;
 }
 
 .GEMs-List > li > a:hover {
-  text-shadow: 1px 1px 1px #000;
-  border: 1px solid #fff
+	border: 1px solid #fff;
 }
