@@ -1,0 +1,17 @@
+.GEMs-List {
+	margin-bottom: 1.5rem;
+	font-style: italic;
+	list-style-type: none;
+}
+.GEMs-List > li {
+	background: none;
+}
+
+.GEMs-List > li > a {
+	color: black;
+	border: 1px solid #000;
+}
+
+.GEMs-List > li > a:hover {
+	border: 1px solid #fff;
+}

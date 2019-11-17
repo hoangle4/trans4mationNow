@@ -21,8 +21,8 @@ function ResourceItem({ groupTitle, groupItem }) {
                 {i.link}
               </a>
             ) : (
-              i.link.map(l => (
-                <Fragment>
+              i.link.map((l, i) => (
+                <Fragment key={i}>
                   <a target='_blank' href={l}>
                     {l}
                   </a>

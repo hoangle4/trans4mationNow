@@ -1,7 +1,9 @@
-.Event_Container {
+.Survey-Row {
 	background: linear-gradient(to left, #07a3b2, #d9ecc7 50%, #07a3b2 100%);
 	background-size: 200% 200%;
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
-	padding: 1rem 0;
+	padding: 2rem;
+	font-weight: bold;
+	font-size: 1.2rem;
 }

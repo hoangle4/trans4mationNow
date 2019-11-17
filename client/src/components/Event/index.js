@@ -8,7 +8,7 @@ const Event = () => {
       <div className='row mx-0'>
         <div className='col-12 px-0'>
           <Jumbotron
-            title='UP COMMING EVENTS'
+            title='UPCOMING EVENTS'
             subtitle='EVENTS PAGE AND CALENDAR'
           />
         </div>
@@ -26,17 +26,17 @@ const Event = () => {
             />
             <EventList
               imgLink='/images/adobe1.jpg'
-              title='GEMS University online sign-up – March 2020'
+              title='G.E.MS University online sign-up – March 2020'
               eventType='Public'
-              eventDesc='GEMS University online sign-up.'
+              eventDesc='G.E.Ms University online sign-up.'
               eventDate='March 2020'
               eventId='032020'
             />
             <EventList
               imgLink='/images/adobe2.jpg'
-              title='GEMS University classes beginning September 2020'
+              title='G.E.Ms University classes beginning September 2020'
               eventType='Private'
-              eventDesc='GEMS University classes beginning.'
+              eventDesc='G.E.Ms University classes beginning.'
               eventDate='September 2020'
               eventId='092020'
             />
@@ -60,9 +60,9 @@ const Event = () => {
             />
             <EventList
               imgLink='/images/stock3.jpg'
-              title='GEMS-GRAND-Ball 2021'
+              title='G.E.Ms - GRAND - Ball 2021'
               eventType='Public'
-              eventDesc='GEMS-GRAND-Ball.'
+              eventDesc='G.E.Ms - GRAND - Ball.'
               eventDate='2021'
               eventId='092021'
             />

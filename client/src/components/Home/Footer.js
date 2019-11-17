@@ -1,38 +1,42 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='row mx-0 Footer'>
       <div className='col-12 p-0'>
         <div className='row mx-0 border-bottom mb-5'>
           <div className='col-md-6 col-xs-12 p-0'>
-            <h5>Contact Us</h5>
+            <h3>Contact Us</h3>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Address</strong>
               </li>
-              <li>P.O. Box 422</li>
-              <li>Brice, Ohio 43109</li>
+              <li className='Footer-li'>P.O. Box 422</li>
+              <li className='Footer-li'>Brice, Ohio 43109</li>
             </ul>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Phone</strong>
               </li>
-              <li>
-                <a href='tel:614 924 0007'>614 924 0007</a>
+              <li className='Footer-li'>
+                <a href='tel:6149240007' className=''>
+                  Phone: 614 924 0007
+                </a>
               </li>
-              <li>
-                <a href='tel:614 924 0007'>614 924 0007</a>
+              <li className='Footer-li'>
+                <a href='fax:6145751919' className=''>
+                  Fax: 614 575 1919
+                </a>
               </li>
             </ul>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Email</strong>
               </li>
-              <li>
+              <li className='Footer-li'>
                 <a href='mailto:gems@tfnow.org'>gems@tfnow.org</a>
               </li>
-              <li>
+              <li className='Footer-li'>
                 <a href='mailto:gems@trans4mationnow.org'>
                   gems@trans4mationnow.org
                 </a>
@@ -40,7 +44,20 @@ const Footer = () => {
             </ul>
           </div>
           <div className='col-md-6 col-xs-12 p-0'>
-            <h5>Send Us a Message</h5>
+            <div className='row '>
+              <div className='col-md-6 p-0'>
+                <h3>Send Us a Message</h3>
+              </div>
+              <div className='col-md-6 p-0 text-center'>
+                <ul className='list-group'>
+                  <li className='list-group-item bg-transparent border-0'>
+                    <Link to='/survey' className='green-btn'>
+                      Take a Survey!
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <form className='p-3'>
               <div className='form-group'>
                 <div className='form-group'>
@@ -92,41 +109,41 @@ const Footer = () => {
         <div className='row mx-0'>
           <div className='col-md-3 col-xs-6 p-0'>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>About Us</strong>
               </li>
-              <li>How it works</li>
-              <li>Blog</li>
+              <li className='Footer-li'>How it works</li>
+              <li className='Footer-li'>Blog</li>
             </ul>
           </div>
           <div className='col-md-3 col-xs-6 p-0'>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Information</strong>
               </li>
-              <li>FAQs</li>
-              <li>Terms & Conditions</li>
+              <li className='Footer-li'>FAQs</li>
+              <li className='Footer-li'>Terms & Conditions</li>
             </ul>
           </div>
 
           <div className='col-md-3 col-xs-6 p-0'>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Policy</strong>
               </li>
-              <li>Privacy</li>
-              <li>What we shared</li>
+              <li className='Footer-li'>Privacy</li>
+              <li className='Footer-li'>What we shared</li>
             </ul>
           </div>
 
           <div className='col-md-3 col-xs-6 p-0'>
             <ul className='Footer_UL'>
-              <li>
+              <li className='Footer-li'>
                 <strong>Connect with Us</strong>
               </li>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Twitter</li>
+              <li className='Footer-li'>Instagram</li>
+              <li className='Footer-li'>Facebook</li>
+              <li className='Footer-li'>Twitter</li>
             </ul>
           </div>
 

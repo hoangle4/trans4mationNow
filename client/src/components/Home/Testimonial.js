@@ -44,20 +44,6 @@ const Testimonial = () => {
               active=''
               slideClass='Testimonial_Slide_Right'
             />
-            <TestimonialItem
-              name='Nocole Brown-Horston'
-              img=''
-              story={`We have friends in Ohio who are making strides in the laws and support that is given to families who are impacted. Mrs. Crystal Turner is one of them. Her videos share her human side which many forget that there long after the rime has been committed. Please use her story to educate your circle of influence of the great perils of gun violence. The strength it took to make this video for each of us to glean information to help our families makes me most proud. Proud to be associated with a women who has made a decision to speak for voiceless, forgive even when it hurts and fight for change for those who will never know the magnitude of what you've been through to accomplish this feat `}
-              active=''
-              slideClass='Testimonial_Slide_Left'
-            />
-            <TestimonialItem
-              name='Carol CJ Jefferson'
-              img=''
-              story={`Gods knows what you need just when you need it. Great day today being with parents of murdered children and it feels really good to be around others who understand what it really feels like when our children had to go the way that they did. We are supporting each other. Crystal is truly a God sent as she opens up her home we can cry, eat, vent, and just encourage each other. It was a good day and I am thanking God Crystal Turner's vision as we continue to support each other`}
-              active=''
-              slideClass='Testimonial_Slide_Right'
-            />
           </div>
 
           <a
