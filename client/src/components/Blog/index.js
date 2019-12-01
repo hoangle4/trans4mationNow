@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Jumbotron from '../Jumbotron';
+import BlogItem from './BlogItem';
 
 const Blog = (props) => {
 	return (
@@ -16,16 +17,14 @@ const Blog = (props) => {
 				}
 			/>
 			<div className="row mx-0 Donation-Row-1">
-				<div className="col-12 py-0 text-center">
-					<h3>Help Our Cause</h3>
-					<p style={{ textTransform: 'uppercase' }}>
-						TRANSFORMATIONNOW INC. IS GRATEFUL FOR YOUR GENEROSITY, AND MOST IMPORTANTLY YOUR COMMITMENT TO
-						OUR MISSION ON SUPPORTING G.E.Ms. AS THEY CONTRIBUTE TO OUR NEXT GENERATION. YOUR DONATION HELPS
-						US TO MEET OUR GOALS AND FUND OUR MISSION. THANK YOU! <br />
-						<strong>
-							Please note that your contribution is tax-deductible within the limits prescribed by law.
-						</strong>
-					</p>
+				<div className="col-md-8 py-0 mx-auto text-center">
+					<h1>G.E.Ms Blogs</h1>
+				</div>
+			</div>
+
+			<div className="row mx-0 Donation-Row-1">
+				<div className="col-md-8 py-0 mx-auto">
+					<BlogItem />
 				</div>
 			</div>
 		</Fragment>
