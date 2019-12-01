@@ -1,10 +1,6 @@
 require('dotenv').config();
 
 const express = require('express');
-<<<<<<< HEAD
-const mongoose = require('mongoose');
-=======
->>>>>>> master
 const routes = require('./routes');
 const cors = require('cors');
 const app = express();
