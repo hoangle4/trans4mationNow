@@ -1,8 +1,14 @@
+require('dotenv').config();
+
 const express = require('express');
+<<<<<<< HEAD
 const mongoose = require('mongoose');
+=======
+>>>>>>> master
 const routes = require('./routes');
 const cors = require('cors');
 const app = express();
+const db = require('./models');
 
 const PORT = process.env.PORT || 3001;
 const allowedOrigins = [ 'http://localhost:3000', 'https://master.dnsy5i4as8f52.amplifyapp.com' ];
@@ -24,8 +30,10 @@ app.use(
 		origin: '*'
 	})
 );
-app.use(express.urlencoded({ extended: true }));
+// Middleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.static('public'));
 
 if (process.env.NODE_ENV !== 'production') {
 	require('dotenv').config();
@@ -35,31 +43,25 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-//Backend API
-// app.use('/api', require('./routes/api'));
-// app.use('/db', require('./routes/db'));
+var syncOptions = { force: false };
+if (process.env.NODE_ENV === 'test') {
+	syncOptions.force = true;
+}
 
-// Connect to the Mongo DB
-
-// const { MONGODB_URI } = require('./config');
-// mongoose.connect(MONGODB_URI, {
-//   useNewUrlParser: true,
-//   useCreateIndex: true,
-//   useFindAndModify: false
-// });
-
-///////
 app.use(routes);
 
 app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
-// Connect to the Mongo DB
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/transformation",{ useNewUrlParser: true });
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === 'test') {
+	syncOptions.force = true;
+}
 
-/////
-
-app.listen(PORT, function() {
-	console.log(`API Server now listening on PORT ${PORT}!`);
+db.sequelize.sync(syncOptions).then(function() {
+	app.listen(PORT, function() {
+		console.log('==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.', PORT, PORT);
+	});
 });

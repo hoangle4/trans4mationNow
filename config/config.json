@@ -1,0 +1,23 @@
+{
+	"development": {
+		"username": "cimpppogacvamo",
+		"password": "3964337695866b3c20bdd322254ea5be6ae8222c24a6e58ba142c3a3a9b3773f",
+		"database": "dabjrtfvmf1hfr",
+		"host": "ec2-23-21-129-125.compute-1.amazonaws.com",
+		"dialect": "postgres",
+		"ssl": "true",
+		"port": "5432"
+	},
+	"test": {
+		"username": "root",
+		"password": null,
+		"database": "testdb",
+		"host": "localhost",
+		"dialect": "postgres",
+		"logging": false
+	},
+	"production": {
+		"use_env_variable": "JAWSDB_URL",
+		"dialect": "postgres"
+	}
+}
