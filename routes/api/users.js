@@ -22,10 +22,10 @@ router.post(
 		const { name, email, password } = req.body;
 
 		try {
-			let user = await models.User.findOne({ email });
+			let user = await models.User.findOne({ where: { email } });
 
 			if (user) {
-				resp.status(400).json({ errors: [ { msg: 'User already exists' } ] });
+				return resp.status(400).json({ errors: [ { msg: 'User already exists' } ] });
 			}
 			const avatar = gravatar.url(email, {
 				s: '200',

@@ -11,6 +11,7 @@ const jwt = require('jsonwebtoken');
 router.get('/', auth, async (req, resp) => {
 	try {
 		const user = await models.User.findByPk(req.user.id);
+		console.log('a');
 		resp.json(user);
 	} catch (error) {
 		console.error(error.message);

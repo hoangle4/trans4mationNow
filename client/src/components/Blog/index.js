@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Jumbotron from '../Jumbotron';
 import BlogItem from './BlogItem';
-import { Link } from 'react-router-dom';
-
+import SignUp from '../Auth/SignUp';
+import LogInModal from '../Auth/LogIn';
 const Blog = (props) => {
 	return (
 		<Fragment>
@@ -19,13 +19,9 @@ const Blog = (props) => {
 			/>
 			<div className="row mx-0 Donation-Row-1">
 				<div className="col-md-8 py-0 mx-auto text-center">
-					<div className="float-right">
-						<Link className="ui black basic button" to="/login">
-							Sign In
-						</Link>
-						<Link className="ui black basic button" to="/signup">
-							Sign Up
-						</Link>
+					<div style={{ display: 'inline' }} className="float-right">
+						<SignUp />
+						<LogInModal />
 					</div>
 					<h1 style={{ clear: 'both' }}>G.E.Ms Blogs</h1>
 				</div>
