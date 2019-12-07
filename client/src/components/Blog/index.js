@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Jumbotron from '../Jumbotron';
 import BlogItem from './BlogItem';
+import { Link } from 'react-router-dom';
 
 const Blog = (props) => {
 	return (
@@ -18,7 +19,15 @@ const Blog = (props) => {
 			/>
 			<div className="row mx-0 Donation-Row-1">
 				<div className="col-md-8 py-0 mx-auto text-center">
-					<h1>G.E.Ms Blogs</h1>
+					<div className="float-right">
+						<Link className="ui black basic button" to="/login">
+							Sign In
+						</Link>
+						<Link className="ui black basic button" to="/signup">
+							Sign Up
+						</Link>
+					</div>
+					<h1 style={{ clear: 'both' }}>G.E.Ms Blogs</h1>
 				</div>
 			</div>
 
