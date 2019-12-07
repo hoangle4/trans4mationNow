@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-var syncOptions = { force: false };
+var syncOptions = { force: false, alter: true };
 if (process.env.NODE_ENV === 'test') {
 	syncOptions.force = true;
 }

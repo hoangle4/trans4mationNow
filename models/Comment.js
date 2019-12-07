@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-	const Event = sequelize.define('Event', {
-		eventId: {
+	const Comment = sequelize.define('Comment', {
+		id: {
 			type: DataTypes.UUID,
 			defaultValue: DataTypes.UUIDV4,
 			allowNull: false,
@@ -16,30 +16,20 @@ module.exports = function(sequelize, DataTypes) {
 				len: [ 1 ]
 			}
 		},
-		eventDesc: {
+		description: {
 			type: DataTypes.TEXT,
 			allowNull: false,
 			validate: {
 				len: [ 1 ]
 			}
 		},
-		eventDate: {
-			type: DataTypes.DATE,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
-		},
-		profileFolder: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+		user: {
+			type: DataTypes.UUID,
+			allowNull: false
 		}
 	});
 
-	Event.associate = function(models) {};
+	Comment.associate = function(models) {};
 
-	return Event;
+	return Comment;
 };
