@@ -29,7 +29,6 @@ app.use(
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static('public'));
 
 if (process.env.NODE_ENV !== 'production') {
 	require('dotenv').config();
@@ -39,7 +38,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-var syncOptions = { force: false };
+var syncOptions = { force: false, alter: true };
 if (process.env.NODE_ENV === 'test') {
 	syncOptions.force = true;
 }

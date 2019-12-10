@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-	const Event = sequelize.define('Event', {
-		eventId: {
+	const User = sequelize.define('User', {
+		id: {
 			type: DataTypes.UUID,
 			defaultValue: DataTypes.UUIDV4,
 			allowNull: false,
@@ -9,37 +9,45 @@ module.exports = function(sequelize, DataTypes) {
 				len: [ 1 ]
 			}
 		},
-		title: {
+		name: {
 			type: DataTypes.STRING(255),
 			allowNull: false,
 			validate: {
 				len: [ 1 ]
 			}
 		},
-		eventDesc: {
-			type: DataTypes.TEXT,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
-		},
-		eventDate: {
-			type: DataTypes.DATE,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
-		},
-		profileFolder: {
+		email: {
 			type: DataTypes.STRING,
 			allowNull: false,
+			validate: {
+				len: [ 1 ]
+			}
+		},
+		password: {
+			type: DataTypes.STRING,
+			allowNull: false,
+			validate: {
+				len: [ 1 ]
+			}
+		},
+		avatar: {
+			type: DataTypes.STRING,
+			allowNull: false,
+			validate: {
+				len: [ 1 ]
+			}
+		},
+		admin: {
+			type: DataTypes.BOOLEAN,
+			allowNull: false,
+			defaultValue: false,
 			validate: {
 				len: [ 1 ]
 			}
 		}
 	});
 
-	Event.associate = function(models) {};
+	User.associate = function(models) {};
 
-	return Event;
+	return User;
 };

@@ -11,16 +11,29 @@ import Blog from './components/Blog';
 import Resources from './components/Resources';
 import Survey from './components/Survey';
 import GEMsUniversity from './components/GEMsUniversity';
+import Alert from './components/Alert';
 import GemForm from './components/GEMsUniversity/GemForm';
+
+import { loadUser } from './action/auth';
+import { setAuthToken } from './utils';
+
+import { Provider } from 'react-redux';
+import store from './store';
+
+if (localStorage.getItem('token')) {
+	setAuthToken(localStorage.getItem('token'));
+	store.dispatch(loadUser());
+}
 const App = () => {
 	useEffect(() => {
 		Utils.NavBarAnimation();
 	}, []);
 
 	return (
-		<div>
+		<Provider store={store}>
 			<Router>
 				<Navbar />
+				<Alert />
 				<Switch>
 					<Route exact path={'/'} component={Home} />
 					<Route exact path={'/event'} component={Event} />
@@ -34,7 +47,7 @@ const App = () => {
 				</Switch>
 				<Footer />
 			</Router>
-		</div>
+		</Provider>
 	);
 };
 

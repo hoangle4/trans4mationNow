@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-	const Event = sequelize.define('Event', {
-		eventId: {
+	const Blog = sequelize.define('Blog', {
+		id: {
 			type: DataTypes.UUID,
 			defaultValue: DataTypes.UUIDV4,
 			allowNull: false,
@@ -16,30 +16,48 @@ module.exports = function(sequelize, DataTypes) {
 				len: [ 1 ]
 			}
 		},
-		eventDesc: {
-			type: DataTypes.TEXT,
+		subtitle: {
+			type: DataTypes.STRING(255),
 			allowNull: false,
 			validate: {
 				len: [ 1 ]
 			}
 		},
-		eventDate: {
-			type: DataTypes.DATE,
+		description: {
+			type: DataTypes.ARRAY(DataTypes.TEXT),
 			allowNull: false,
 			validate: {
 				len: [ 1 ]
 			}
 		},
-		profileFolder: {
+		notes: {
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
 				len: [ 1 ]
 			}
+		},
+		image: {
+			type: DataTypes.STRING,
+			allowNull: false,
+			validate: {
+				len: [ 1 ]
+			}
+		},
+		user: {
+			type: DataTypes.UUID,
+			allowNull: false,
+			primaryKey: true
+		},
+		comment: {
+			type: DataTypes.UUID,
+			allowNull: false
 		}
 	});
 
-	Event.associate = function(models) {};
+	Blog.associate = function(models) {
+		Blog.hasMany(models.Comment);
+	};
 
-	return Event;
+	return Blog;
 };

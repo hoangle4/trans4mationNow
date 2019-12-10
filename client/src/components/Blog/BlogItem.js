@@ -12,7 +12,7 @@ const items = [
 			<Fragment>
 				<Label icon="thermometer half" content="Classroom temps vary" />
 				<Button primary floated="right">
-					<Icon name="left book" />
+					<Icon name="book" />
 					Read Blog
 				</Button>
 			</Fragment>
@@ -28,7 +28,7 @@ const items = [
 			<Fragment>
 				<Label icon="handshake outline" content="Treat all with respect" />
 				<Button primary floated="right">
-					<Icon name="left book" />
+					<Icon name="book" />
 					Read Blog
 				</Button>
 			</Fragment>
@@ -37,11 +37,10 @@ const items = [
 ];
 
 const BlogItem = () => (
-	<Item.Group devided items={items}>
+	<Item.Group>
 		{items.map((i) => (
-			<Item>
+			<Item key={i.childKey}>
 				<Item.Image src={i.image} />
-
 				<Item.Content>
 					<Item.Header as="a">{i.header}</Item.Header>
 					<Item.Meta>
