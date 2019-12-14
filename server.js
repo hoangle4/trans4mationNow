@@ -8,7 +8,6 @@ const db = require('./models');
 
 const PORT = process.env.PORT || 3001;
 const allowedOrigins = [ 'http://localhost:3000', 'https://master.dnsy5i4as8f52.amplifyapp.com' ];
-
 app.use(
 	cors({
 		// origin: function(origin, callback) {
@@ -38,7 +37,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-var syncOptions = { force: false, alter: true };
+var syncOptions = { force: false, alter: false };
 if (process.env.NODE_ENV === 'test') {
 	syncOptions.force = true;
 }

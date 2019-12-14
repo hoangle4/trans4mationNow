@@ -33,7 +33,7 @@ router.post(
 		const { email, password } = req.body;
 
 		try {
-			let user = await models.User.findOne({ email });
+			let user = await models.User.findOne({ where: { email } });
 
 			if (!user) return resp.status(400).json({ errors: [ { msg: 'Invalid Credentials' } ] });
 

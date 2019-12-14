@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react';
 import { Button, Form, Modal, Checkbox } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { register } from '../../action/auth';
+import { Redirect } from 'react-router-dom';
+
 class SignUpModal extends Component {
 	state = {
 		open: false,
@@ -16,6 +18,7 @@ class SignUpModal extends Component {
 
 	render() {
 		const { open, dimmer, name, email, password } = this.state;
+		if (this.props.isAuthenticated) return <Redirect to="/blog" />;
 
 		return (
 			<Fragment>
@@ -34,15 +37,28 @@ class SignUpModal extends Component {
 							<Form>
 								<Form.Field>
 									<label>Name</label>
-									<input type="text" onChange={this.inputChange} name="name" placeholder="Name" />
+									<input
+										value={name}
+										type="text"
+										onChange={this.inputChange}
+										name="name"
+										placeholder="Name"
+									/>
 								</Form.Field>
 								<Form.Field>
 									<label>Email</label>
-									<input type="text" onChange={this.inputChange} name="email" placeholder="Email" />
+									<input
+										value={email}
+										type="text"
+										onChange={this.inputChange}
+										name="email"
+										placeholder="Email"
+									/>
 								</Form.Field>
 								<Form.Field>
 									<label>Password</label>
 									<input
+										value={password}
 										onChange={this.inputChange}
 										name="password"
 										type="password"
