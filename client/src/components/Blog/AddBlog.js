@@ -4,14 +4,16 @@ import { connect } from 'react-redux';
 import { createBlog } from '../../action/blog';
 
 class AddBlogModal extends Component {
-	state = { open: false, title: '', subtitle: '', photo: '', description: '', notes: '' };
-
+	state = { open: false, title: '', subtitle: '', description: '', notes: '' };
+	photo = new FormData();
 	show = (dimmer) => () => this.setState({ dimmer, open: true });
 	close = () => this.setState({ open: false });
 	inputChange = (e) => this.setState({ [e.target.name]: e.target.value });
-	render() {
-		const { open, dimmer, subtitle, title, photo, description, notes } = this.state;
+	addFormData = (e) => this.photo.append('blogPhoto', e.target.files[0], e.target.files[0].name);
 
+	render() {
+		const { photo, state: { open, dimmer, subtitle, title, description, notes } } = this;
+		console.log(this.formData);
 		return (
 			<Fragment>
 				<a className="ui basic button black" onClick={this.show('blurring')}>
@@ -50,7 +52,7 @@ class AddBlogModal extends Component {
 								</Form.Field>
 								<Form.Field>
 									<label>Photo</label>
-									<input onChange={this.inputChange} value={photo} name="photo" type="file" />
+									<input onChange={this.addFormData} name="photo" type="file" />
 								</Form.Field>
 								<Form.Field>
 									<label>Description</label>

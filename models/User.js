@@ -47,7 +47,9 @@ module.exports = function(sequelize, DataTypes) {
 		}
 	});
 
-	User.associate = function(models) {};
+	User.associate = function(models) {
+		User.hasMany(models.Blog);
+	};
 
 	return User;
 };

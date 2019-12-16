@@ -56,6 +56,7 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
 	Blog.associate = function(models) {
+		Blog.belongsTo(models.User);
 		Blog.hasMany(models.Comment);
 	};
 
