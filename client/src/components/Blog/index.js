@@ -4,7 +4,9 @@ import Jumbotron from '../Jumbotron';
 import BlogItem from './BlogItem';
 import SignUp from '../Auth/SignUp';
 import LogInModal from '../Auth/LogIn';
-const Blog = (props) => {
+import { connect } from 'react-redux';
+import AddBlog from './AddBlog';
+const Blog = ({ isAuthenticated }) => {
 	return (
 		<Fragment>
 			<Jumbotron
@@ -20,8 +22,12 @@ const Blog = (props) => {
 			<div className="row mx-0 Donation-Row-1">
 				<div className="col-md-8 py-0 mx-auto text-center">
 					<div style={{ display: 'inline' }} className="float-right">
-						<SignUp />
-						<LogInModal />
+						{(!isAuthenticated && (
+							<Fragment>
+								<SignUp />
+								<LogInModal />
+							</Fragment>
+						)) || <AddBlog />}
 					</div>
 					<h1 style={{ clear: 'both' }}>G.E.Ms Blogs</h1>
 				</div>
@@ -38,4 +44,8 @@ const Blog = (props) => {
 
 Blog.propTypes = {};
 
-export default Blog;
+const mapStateToProps = (state) => ({
+	isAuthenticated: state.auth.isAuthenticated
+});
+
+export default connect(mapStateToProps)(Blog);
