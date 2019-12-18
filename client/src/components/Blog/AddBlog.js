@@ -1,19 +1,24 @@
 import React, { Component, Fragment } from 'react';
 import { Button, Form, Modal, Checkbox } from 'semantic-ui-react';
 import { connect } from 'react-redux';
-import { createBlog } from '../../action/blog';
+import { createBlog, uploadPhoto } from '../../action/blog';
 
 class AddBlogModal extends Component {
-	state = { open: false, title: '', subtitle: '', description: '', notes: '' };
-	photo = new FormData();
+	state = { open: false, title: '', subtitle: '', photo: '', description: '', notes: '' };
+
 	show = (dimmer) => () => this.setState({ dimmer, open: true });
 	close = () => this.setState({ open: false });
 	inputChange = (e) => this.setState({ [e.target.name]: e.target.value });
-	addFormData = (e) => this.photo.append('blogPhoto', e.target.files[0], e.target.files[0].name);
+	addFormData = async (e) => {
+		const photo = new FormData();
+		photo.append('blogPhoto', e.target.files[0], e.target.files[0].name);
+		const photoURL = await this.props.uploadPhoto(photo);
+		console.log(photoURL);
+		this.setState({ photo: photoURL });
+	};
 
 	render() {
 		const { photo, state: { open, dimmer, subtitle, title, description, notes } } = this;
-		console.log(this.formData);
 		return (
 			<Fragment>
 				<a className="ui basic button black" onClick={this.show('blurring')}>
@@ -88,7 +93,7 @@ class AddBlogModal extends Component {
 						<Button
 							positive
 							content="Create Blog"
-							onClick={() => this.props.createBlog({ title, subtitle, photo, description, notes })}
+							onClick={() => this.props.createBlog({ title, subtitle, description, photo, notes })}
 						/>
 					</Modal.Actions>
 				</Modal>
@@ -97,4 +102,4 @@ class AddBlogModal extends Component {
 	}
 }
 
-export default connect(null, { createBlog })(AddBlogModal);
+export default connect(null, { createBlog, uploadPhoto })(AddBlogModal);
