@@ -63,6 +63,7 @@ export const login = ({ email, password }) => async (dispatch) => {
 	const body = JSON.stringify({ email, password });
 	try {
 		const result = await axios.post('/api/auth', body, config);
+		console.log(result);
 		dispatch({ type: LOGIN_SUCCESS, payload: { token: result.data } });
 		dispatch(loadUser());
 		dispatch(setAlert('Login Successful', 'success', 2000));

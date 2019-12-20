@@ -9,12 +9,13 @@ const jwt = require('jsonwebtoken');
 //@desc   Get Auth user
 //@access Private
 router.get('/', auth, async (req, resp) => {
+	console.log(req.user.id);
 	try {
 		const user = await models.User.findByPk(req.user.id);
 		console.log('a');
 		resp.json(user);
 	} catch (error) {
-		console.error(error.message);
+		console.error(error);
 		resp.status(500).send('Server Error');
 	}
 });
@@ -33,7 +34,7 @@ router.post(
 		const { email, password } = req.body;
 
 		try {
-			let user = await models.User.findOne({ email });
+			let user = await models.User.findOne({ where: { email } });
 
 			if (!user) return resp.status(400).json({ errors: [ { msg: 'Invalid Credentials' } ] });
 

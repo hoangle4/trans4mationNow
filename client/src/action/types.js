@@ -17,5 +17,13 @@ export const PROFILE_ERROR = 'PROFILE_ERROR';
 export const CLEAR_PROFILE = 'CLEAR_PROFILE';
 export const UPDATE_PROFILE = 'UPDATE_PROFILE';
 
+//Blog
+export const GET_BLOG = 'GET_BLOG';
+export const GET_BLOGS = 'GET_BLOGS';
+export const BLOG_ERROR = 'BLOG_ERROR';
+export const CLEAR_BLOG = 'CLEAR_BLOG';
+export const UPDATE_BLOG = 'UPDATE_BLOG';
+export const CREATE_BLOG = 'CREATE_BLOG';
+
 //Delete Account
 export const DELETE_ACCOUNT = 'DELETE_ACCOUNT';

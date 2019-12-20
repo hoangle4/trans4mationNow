@@ -4,58 +4,37 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.UUID,
 			defaultValue: DataTypes.UUIDV4,
 			allowNull: false,
-			primaryKey: true,
-			validate: {
-				len: [ 1 ]
-			}
+			primaryKey: true
 		},
 		title: {
 			type: DataTypes.STRING(255),
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+			allowNull: false
 		},
 		subtitle: {
 			type: DataTypes.STRING(255),
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+			allowNull: false
 		},
 		description: {
-			type: DataTypes.ARRAY(DataTypes.TEXT),
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+			type: DataTypes.TEXT,
+			allowNull: false
 		},
 		notes: {
 			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+			allowNull: false
 		},
-		image: {
+		photo: {
 			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [ 1 ]
-			}
+			allowNull: false
 		},
 		user: {
 			type: DataTypes.UUID,
 			allowNull: false,
 			primaryKey: true
-		},
-		comment: {
-			type: DataTypes.UUID,
-			allowNull: false
 		}
 	});
 
 	Blog.associate = function(models) {
+		Blog.belongsTo(models.User);
 		Blog.hasMany(models.Comment);
 	};
 
