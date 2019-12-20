@@ -9,16 +9,17 @@ class AddBlogModal extends Component {
 	show = (dimmer) => () => this.setState({ dimmer, open: true });
 	close = () => this.setState({ open: false });
 	inputChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
+	setPhotoPath = (path) => this.setState({ photo: path });
+
 	addFormData = async (e) => {
 		const photo = new FormData();
 		photo.append('blogPhoto', e.target.files[0], e.target.files[0].name);
-		const photoURL = await this.props.uploadPhoto(photo);
-		console.log(photoURL);
-		this.setState({ photo: photoURL });
+		await this.props.uploadPhoto(photo, this.setPhotoPath);
 	};
 
 	render() {
-		const { photo, state: { open, dimmer, subtitle, title, description, notes } } = this;
+		const { state: { open, dimmer, photo, subtitle, title, description, notes } } = this;
 		return (
 			<Fragment>
 				<a className="ui basic button black" onClick={this.show('blurring')}>

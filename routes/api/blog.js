@@ -3,11 +3,27 @@ const auth = require('../../middleware/auth');
 const models = require('../../models');
 const path = require('path');
 const { check, validationResult } = require('express-validator');
+
 /**
  * @param {Object} req
  * @param {Object} resp
  * @param {Function} auth
- * @param {Object} upload
+ * 
+ */
+router.get('/', auth, async (req, resp) => {
+	try {
+		const blogs = await models.Blog.findAll();
+		resp.json(blogs);
+	} catch (error) {
+		console.error(error.message);
+		resp.status(500).send('Server Error');
+	}
+});
+
+/**
+ * @param {Object} req
+ * @param {Object} resp
+ * @param {Function} auth
  * 
  */
 router.post(
@@ -25,8 +41,9 @@ router.post(
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) return resp.status(400).json({ errors: errors.array() });
 		try {
-			const { title, subtitile, description, note } = req.body;
-			const blog = await models.Blog.create({});
+			const { body: { title, subtitle, photo, description, notes }, user: { id } } = req;
+			const blog = await models.Blog.create({ title, subtitle, photo, description, notes, user: id });
+			resp.json(blog);
 		} catch (error) {
 			console.error(error.message);
 			resp.status(500).send('Server Error');

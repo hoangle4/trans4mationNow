@@ -66,7 +66,7 @@ export const createBlog = (formData) => async (dispatch) => {
  * 
  * @param {Object} photo 
  */
-export const uploadPhoto = (photo) => async (dispatch) => {
+export const uploadPhoto = (photo, cb) => async (dispatch) => {
 	try {
 		const config = {
 			headers: {
@@ -75,7 +75,8 @@ export const uploadPhoto = (photo) => async (dispatch) => {
 		};
 
 		const result = await axios.post('/api/blog/upload', photo, config);
-		return result.path;
+
+		if (result.data.path) cb(result.data.path);
 	} catch (error) {
 		const errors = error.response.data.errors;
 
